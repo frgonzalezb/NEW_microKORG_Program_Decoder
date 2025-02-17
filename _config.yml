@@ -1,9 +1,7 @@
 title: "🎹 NEW microKORG PRG (and SYX!) Program Decoder 🎹"
 author: "Francisco González"
 
-keep_files:
-  - app/assets/json/dwgs_list.json
-  - app/assets/svg/favicon.svg
+keep_files: [app/assets/json/dwgs_list.json, app/assets/svg/favicon.svg]
 
 exclude:
   - LICENSE
