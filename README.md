@@ -1,8 +1,9 @@
 # 🎹 NEW microKORG PRG (and SYX!) Program Decoder 🎹
 
-A pure JavaScript-based webapp attempted to decode programs (a.k.a. "patches") for the Korg® microKORG®[^1] synth. These patches are usually stored either in PRG files or, less commonly, in SYX files.
+A pure JavaScript-based webapp attempted to decode programs (a.k.a. "patches") for the Korg®[^1] microKORG®[^2] synth. These patches are usually stored either in PRG files or, less commonly, in SYX files.
 
-[^1]: Korg® and microKORG® are registered trademarks of Korg, Inc. This webapp is **_unofficial_** and it's not affiliated with Korg, Inc.
+[^1]: This webapp only supports patches for the original _microKORG®_ and _microKORG® S_ models, which use the _MS2000®_ synth engine. It does **not** support files for newer models, such as the _microKORG® XL/XL+_ or the _microKORG® 2_, all of which use unrelated synth engines.
+[^2]: Korg®, microKORG® and MS2000® are registered trademarks of Korg, Inc. This webapp is **_unofficial_** and it's not affiliated with Korg, Inc.
 
 This is a fork of the old good text-based [PRG_Reader](https://www.hilltop-cottage.info/a/PRG_Reader.html) by [Adam Cooper](https://github.com/arc12), but it has been heavily-modified, an almost-complete rewrite of it.
 
