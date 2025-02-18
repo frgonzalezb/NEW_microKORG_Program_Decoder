@@ -1,4 +1,4 @@
-# 🎹 NEW microKORG PRG (and SYX!) Program Decoder 🎹
+# NEW microKORG PRG (and SYX!) Program Decoder
 
 A pure JavaScript-based webapp for the purpose of decoding programs (a.k.a. "patches"[^1]) for the Korg® microKORG®[^2] synth. These patches are usually stored either in PRG files or, less commonly, in SYX files.
 
