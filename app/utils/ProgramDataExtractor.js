@@ -206,17 +206,15 @@ export default class ProgramDataExtractor {
     return msb | this.fileData[currentDataPoint];
   }
 
+
   /**
-   * Reads a 7-byte (8-bit) chunk from the PRG file data and converts it
-   * to an 8-byte (7-bit) chunk of SysEx message data (a.k.a. MIDI data).
-   * Actually, the 7-bit format is 8-bit, but the MSB of each byte
-   * is set to 0. The first byte in the 8-byte chunk will contain the
-   * actual MSBs for the next 7 bytes.
-   * 
-   * Please see Note 5 (data dump conversion) in the microKORG MIDI
-   * Implementation Guide for in-depth details.
+   * Converts the 7-bit, 8-byte MIDI data found in a PRG or SYX file
+   * to the 8-bit, 7-byte ordinary data, which is needed for
+   * the next decoding stage.
+   *
+   * @returns {Uint8Array} The converted 8-bit MIDI data.
    */
-  convertPrgFileBytesToMidiBytes() {
+  convertMidiDataTo8bitData() {
     const midiDataByteSize = 7;
     const nextMidiChunkDistance = 8;
 
@@ -244,7 +242,7 @@ export default class ProgramDataExtractor {
     let programData = new Uint8Array(this.chunksToRead * fileDataChunkSize);
 
     for (let i = 0; i < this.chunksToRead; i++) {
-      const midiChunk = this.convertPrgFileBytesToMidiBytes();
+      const midiChunk = this.convertMidiDataTo8bitData();
       const startIndex = i * fileDataChunkSize;
 
       programData.set(midiChunk, startIndex);
