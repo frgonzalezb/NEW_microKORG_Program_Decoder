@@ -24,7 +24,7 @@ This is a fork of the old good text-based [PRG_Reader](https://www.hilltop-cotta
 
 - ✔️ Selectable **light or dark** modes.
 
-- ✔️ OOP-based cleaner code (kind of... 😅) for better readability and maintenance, and further improvements if needed.
+- ✔️ OOP-based code (kind of... 😅) for better readability and maintenance, and further improvements if needed.
 
 - ❌ The hex visualization feature (which may be useful for developers) was thrown away in favor of clean design and real needs for the intended end users (microKORG players). Nonetheless, there are lots of free (and way better) hex visualization tools, both online or for desktop, so it's not really an issue, and keeps the webapp to do just it's job well. ✌
 
