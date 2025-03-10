@@ -114,6 +114,7 @@ export default class ProgramTable {
 
   formatKeyboardOctaveShift() {
     const value = this.programObj.keyboardOctaveShift;
+    if (value === 0) return value;
     return value > 0 ? `🔺${value}` : `🔻${value}`;
   }
 
