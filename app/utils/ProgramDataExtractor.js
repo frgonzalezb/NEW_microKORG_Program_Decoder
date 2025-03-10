@@ -193,7 +193,7 @@ export default class ProgramDataExtractor {
     return index + offset + this.pointer;
   }
 
-  appendValueToMidiChunk(currentFileByte, currentDataPoint) {
+  compute_8bit_byte(currentFileByte, currentDataPoint) {
     const msbFlag = 0x80;   // MSB flag for 7-bit MIDI format
     const noMsbFlag = 0x00; // No MSB flag for 7-bit MIDI format
 
@@ -205,7 +205,6 @@ export default class ProgramDataExtractor {
 
     return msb | this.fileData[currentDataPoint];
   }
-
 
   /**
    * Converts the 7-bit, 8-byte MIDI data found in a PRG or SYX file
@@ -223,7 +222,7 @@ export default class ProgramDataExtractor {
 
     for (let i = 0; i < midiDataByteSize; i++) {
       const currentDataPoint = this.getCurrentDataPoint(i);
-      midiChunk[i] = this.appendValueToMidiChunk(
+      midiChunk[i] = this.compute_8bit_byte(
         currentFileByte,
         currentDataPoint
       )
