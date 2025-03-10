@@ -31,7 +31,7 @@ This is a fork of the old good text-based [PRG_Reader](https://www.hilltop-cotta
 
 ## Privacy
 
-Just like the original, this webapp is made to be as secure as possible and keeps the **frontend-only** and **no-cookies** policy. There's no backend nor third-party services, and cookies are not really needed at all, since all data processing is done on your local computer, and every session is completely destroyed when you close the browser or refresh the page. You can tell this by cheking the `Application` tab in the your browser's developer tools. You can also run this webapp totally local and offline on your computer (more details below).
+Just like the original, this webapp is made to be as secure as possible and keeps the **frontend-only** and **no-cookies** policy. There's no backend nor third-party services, and cookies are not really needed at all, since all data processing is done on your local computer, and every session is completely destroyed when you close the browser or refresh the page. You can tell this by cheking the `Application` tab in the your browser's developer tools.
 
 The webapp only stores the selected light or dark mode (or the `Auto` default value) in the `localStorage` of your browser. Check `color-modes.js` in the `app/assets/js/` directory for details.
 
@@ -39,21 +39,6 @@ The webapp only stores the selected light or dark mode (or the `Auto` default va
 ## License
 
 Just like the original, this webapp is open source and free to use, under the MIT License. See `LICENSE` for details.
-
-
-# Local usage
-
-For the complete local, **offline** experience, you can also download (clone) this repository to your machine! Just follow these steps:
-
-1. Go to the green `< > Code` button at the beginning of this page, and click it.
-
-2. Select the `Download ZIP` option (depending on your browser settings, the file will be automatically downloaded to your `Downloads` folder, or you may be asked where to save the file).
-
-3. Locate the downloaded file on your local machine and unzip it.
-
-4. Open the `index.html` file to run the webapp.
-
-5. Profit! 😁
 
 
 ## Issues
