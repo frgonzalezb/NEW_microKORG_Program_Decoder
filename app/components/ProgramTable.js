@@ -112,6 +112,11 @@ export default class ProgramTable {
     return tr;
   }
 
+  formatKeyboardOctaveShift() {
+    const value = this.programObj.keyboardOctaveShift;
+    return value > 0 ? `🔺${value}` : `🔻${value}`;
+  }
+
   appendAdditionalParams() {
     const div = document.createElement("div");
     div.classList.add("text-start");
@@ -120,11 +125,10 @@ export default class ProgramTable {
     );
     const listObj = document.createElement("ul");
     const arpIsEnabled = this.programObj.arpIsEnabled;
-    const keyboardOctaveShift = this.programObj.keyboardOctaveShift;
     const additionalParams = {
       "Arpeggiator On/Off": this.formatBooleanValue(arpIsEnabled),
       "Arpeggiator trigger pattern": this.formatArpTriggerPattern(),
-      "Keyboard octave shift": keyboardOctaveShift
+      "Keyboard octave shift": this.formatKeyboardOctaveShift()
     };
 
     for (const [key, value] of Object.entries(additionalParams)) {
