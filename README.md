@@ -29,6 +29,25 @@ This is a fork of the old good text-based [PRG_Reader](https://www.hilltop-cotta
 - ❌ The hex visualization feature (which may be useful for developers) was thrown away in favor of clean design and real needs for the intended end users (microKORG players). Nonetheless, there are lots of free (and way better) hex visualization tools, both online or for desktop, so it's not really an issue, and keeps the webapp to do just it's job well. ✌
 
 
+## Screenshots
+
+Loaded page:
+
+![Main](./screenshots/main.png)
+
+Timbre section:
+
+![Table](./screenshots/table.png)
+
+FX & Arp section:
+
+![FX & Arp](./screenshots/fx_arp.png)
+
+Detail of the additional parameters section. Note **arpeggiator trigger pattern** uses intuitive emojis for active ("✔️") or inactive ("❌") steps, as well as **keyboard octave shift direction** is indicated by a 🔺 ("up") or a 🔻 ("down") emoji.
+
+![Additional Params](./screenshots/additional_parameters.png)
+
+
 ## Privacy
 
 Just like the original, this webapp is made to be as secure as possible and keeps the **frontend-only** and **no-cookies** policy. There's no backend nor third-party services, and cookies are not really needed at all, since all data processing is done on your local computer, and every session is completely destroyed when you close the browser or refresh the page. You can tell this by cheking the `Application` tab in the your browser's developer tools.
